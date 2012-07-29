@@ -1,21 +1,14 @@
 package com.yhx.readpdf;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.AssetManager;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 
@@ -23,6 +16,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.d("test", "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // CopyAssets();
